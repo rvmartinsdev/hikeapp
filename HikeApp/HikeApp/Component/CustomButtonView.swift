@@ -28,7 +28,16 @@ struct CustomButtonView: View {
                     ),
                     lineWidth: 4)
             
-            
+            Image(systemName: "figure.hiking")
+                .fontWeight(.black)
+                .font(.system(size: 30))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.customGrayLight, .customGrayMedium],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
         }//: ZStack
         .frame(width: 58, height: 58)
     }

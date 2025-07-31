@@ -28,12 +28,12 @@ struct CardView: View {
                                     endPoint: .bottom
                                 )
                             )
-                        
+                        Spacer()
                         Button() {
                             //ACTION: show a sheet
                             print("The button was pressed")
                         } label: {
-                            Text("Button")
+                            CustomButtonView()
                         }
                     }
                     Text("Fun and enjoyable acitivies for friends and families.")
