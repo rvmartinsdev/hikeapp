@@ -73,6 +73,7 @@ struct CardView: View {
                     Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.default, value: imageNumber)
                 }
                 
                 //MARK: - FOOTER
